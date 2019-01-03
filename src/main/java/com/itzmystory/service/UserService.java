@@ -1,11 +1,16 @@
 package com.itzmystory.service;
 
-import java.util.Set;
-
 import com.itzmystory.domain.User;
-import com.itzmystory.domain.security.UserRole;
 
 public interface UserService {
 
-	User createUser(User user, Set<UserRole> userRoles);
+	User createUser(User user);
+	
+	User save(User user);
+	
+	User findByUsername(String username);
+	
+	User findByEmail(String email);
+	
+	User findById(Long id);
 }
