@@ -32,7 +32,7 @@ public class UserResource {
 	@Autowired
 	private JavaMailSender mailSender;
 	
-	@RequestMapping(value="/forgotPassword", method=RequestMethod.POST)
+	@RequestMapping(value="/forgot-password", method=RequestMethod.POST)
 	public ResponseEntity forgotPassword(HttpServletRequest request, @RequestBody HashMap<String, String> mapper) throws Exception{
 		
 		User user = userRepository.findByEmail(mapper.get("email"));

@@ -103,8 +103,8 @@ public class User implements UserDetails, Serializable{
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		
 		Set<GrantedAuthority> authorities = new HashSet<>();
-		authorities.add(new Authority("ADMIN"));
-		authorities.add(new Authority("USER"));
+		authorities.add(new Authority("ROLE_ADMIN"));
+		authorities.add(new Authority("ROLE_USER"));
 		return authorities;
 	}
 

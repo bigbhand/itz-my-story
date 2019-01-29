@@ -59,7 +59,6 @@
 		<dependency>
 			<groupId>io.lettuce</groupId>
 			<artifactId>lettuce-core</artifactId>
-			<version>5.0.0.RC1</version>
 			<optional>true</optional>
 		</dependency>
 		
